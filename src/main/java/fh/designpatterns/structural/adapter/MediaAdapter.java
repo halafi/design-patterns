@@ -1,5 +1,8 @@
 package fh.designpatterns.structural.adapter;
 
+import fh.designpatterns.structural.adapter.advancedMediaPlayerImpl.Mp4Player;
+import fh.designpatterns.structural.adapter.advancedMediaPlayerImpl.VlcPlayer;
+
 /**
  * Created by filip on 15.5.15.
  */

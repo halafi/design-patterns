@@ -1,9 +1,11 @@
-package fh.designpatterns.structural.adapter;
+package fh.designpatterns.structural.adapter.advancedMediaPlayerImpl;
+
+import fh.designpatterns.structural.adapter.AdvancedMediaPlayer;
 
 /**
  * Created by filip on 15.5.15.
  */
-public class VlcPlayer implements AdvancedMediaPlayer{
+public class VlcPlayer implements AdvancedMediaPlayer {
 
     @Override
     public void playVlc(String fileName) {
