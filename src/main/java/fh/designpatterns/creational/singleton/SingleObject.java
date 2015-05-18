@@ -6,14 +6,16 @@ package fh.designpatterns.creational.singleton;
 public class SingleObject {
 
     //create an object of SingleObject
-    private static SingleObject instance = new SingleObject();
+    private static SingleObject instance;
 
-    //make the constructor private so that this class cannot be
-    //instantiated
+    //make the constructor private so that this class cannot be instantiated
     private SingleObject(){}
 
     //Get the only object available thread safe
     public static synchronized SingleObject getInstance(){
+        if (instance == null) {
+            instance = new SingleObject();
+        }
         return instance;
     }
 
